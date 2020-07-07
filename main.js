@@ -11,4 +11,8 @@ $(document).ready(function(){
   $('.parent-dropdown').mouseleave(function() {
     $(this).children('.dropdown').toggle();
   });
+  $('.parent-dropdown-xs').click(function() {
+    $(this).children('.dropdown').toggle();
+  });
+
 });
