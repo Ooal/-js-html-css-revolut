@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <title>Hamburger Menu</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Revolut</title>
+  </head>
+  <body>
 
       <header id="nav1">
         <nav>
           <div class="header-left">
             <ul>
                 <li>
-                    <a href="#">Personale</a>
+                    <a id="personale" href="#">Personale</a>
                 </li>
                 <li>
                     <a href="#">Business</a>
@@ -36,66 +36,100 @@
         </div>
       </header>
 
-        <header id="nav2">
-            <div class="header-left">
-                <img id="logo" src="https://download.logo.wine/logo/Revolut/Revolut-Logo.wine.png" alt="logo">
-            </div>
-            <div class="header-center">
+      <header id="nav2">
+          <div class="header-left">
+              <img id="logo" src="https://download.logo.wine/logo/Revolut/Revolut-Logo.wine.png" alt="logo">
+          </div>
+          <div class="header-center">
+            <ul class="ul">
+                  <li class="parent-dropdown"><a class="parent" href="#">Denaro</a>
+                    <div class="dropdown denaro">
+                      <ul class="lista-dropdown">
+                        <li class="elemento-dropdown"><a href="#">Invia denaro all'estero</a></li>
+                        <li class="elemento-dropdown"><a href="#">Effettua e ricevi pagamenti</a></li>
+                        <li class="elemento-dropdown"><a href="#">Paga con Apple Pay</a></li>
+                        <li class="elemento-dropdown"><a href="#">Paga con GPay</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="parent-dropdown"><a class="parent" href="#">Investimenti e Risparmi</a>
+                    <div class="dropdown investimenti">
+                      <ul class="lista-dropdown">
+                        <li class="elemento-dropdown"><a href="#">Effettua compravendite di titoli azionari</a></li>
+                        <li class="elemento-dropdown"><a href="#">Effettua compravendite di prodotti</a></li>
+                        <li class="elemento-dropdown"><a href="#">Effettua compravendite Crypto</a></li>
+                        <li class="elemento-dropdown"><a href="#">Imposta i Salvadanai</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="parent-dropdown"><a class="parent" href="#">Controllo</a>
+                    <div class="dropdown controllo">
+                      <ul class="lista-dropdown">
+                        <li class="elemento-dropdown"><a href="#">Imposta i budget</a></li>
+                        <li class="elemento-dropdown"><a href="#">Tutelati</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="parent-dropdown"><a class="parent" href="#">Altro</a>
+                    <div class="dropdown altro">
+                      <ul class="lista-dropdown">
+                        <li class="elemento-dropdown"><a href="#">Assicura te stesso all'estero</a></li>
+                        <li class="elemento-dropdown"><a href="#">Assicura il tuo dispositivo</a></li>
+                        <li class="elemento-dropdown"><a href="#">Dona agli enti di beneficenza</a></li>
+                        <li class="elemento-dropdown"><h5 class="wip">PROSSIMAMENTE</h5></li>
+                        <li class="elemento-dropdown"><h4 class="wip">Scopri i premi</h4></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="parent-dropdown"><a class="parent" href="#">Plans</a>
+                    <div class="dropdown plans">
+                      <ul class="lista-dropdown">
+                        <li class="elemento-dropdown"><a href="#">Standard</a></li>
+                        <li class="elemento-dropdown"><a href="#">Premium</a></li>
+                        <li class="elemento-dropdown"><a href="#">Metal</a></li>
+                        <li class="elemento-dropdown"><a href="#">Junior </a></li>
+                        <li class="elemento-dropdown"><a href="#">Tariffazione</a></li>
+                      </ul>
+                    </div>
+                  </li>
+            </ul>
+          </div>
+          <div class="header-right">
               <ul>
-                  <li>
-                      <a href="#">Denaro</a>
-                  </li>
-                  <li>
-                      <a href="#">Investimenti e Risparmi</a>
-                  </li>
-                  <li>
-                      <a href="#">Controllo</a>
-                  </li>
-                  <li>
-                      <a href="#">Altro</a>
-                  </li>
-                  <li>
-                      <a href="#">Plans</a>
-                  </li>
-
-              </ul>
-            </div>
-            <div class="header-right">
-                <ul>
-                    <li>
-                        <a href="#" class="btn">Scarica l'app</a>
-                    </li>
-                </ul>
-                <a href="#">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </div>
-            <div class="hamburger-menu">
-              <ul>
-                  <li>
-                      <a href="#">Denaro</a>
-                  </li>
-                  <li>
-                      <a href="#">Investimenti e Risparmi</a>
-                  </li>
-                  <li>
-                      <a href="#">Controllo</a>
-                  </li>
-                  <li>
-                      <a href="#">Altro</a>
-                  </li>
-                  <li>
-                      <a href="#">Plans</a>
-                  </li>
                   <li>
                       <a href="#" class="btn">Scarica l'app</a>
                   </li>
               </ul>
-                <a href="#" class="close">
-                    <i class="fas fa-times"></i>
-                </a>
-            </div>
-        </header>
-        <script src="main.js" charset="utf-8"></script>
-    </body>
+              <a href="#">
+                  <i class="fas fa-bars"></i>
+              </a>
+          </div>
+          <div class="hamburger-menu">
+            <ul>
+                <li>
+                    <a href="#">Denaro</a>
+                </li>
+                <li>
+                    <a href="#">Investimenti e Risparmi</a>
+                </li>
+                <li>
+                    <a href="#">Controllo</a>
+                </li>
+                <li>
+                    <a href="#">Altro</a>
+                </li>
+                <li>
+                    <a href="#">Plans</a>
+                </li>
+                <li>
+                    <a href="#" class="btn">Scarica l'app</a>
+                </li>
+            </ul>
+              <a href="#" class="close">
+                  <i class="fas fa-times"></i>
+              </a>
+          </div>
+      </header>
+      <script src="main.js" charset="utf-8"></script>
+  </body>
 </html>

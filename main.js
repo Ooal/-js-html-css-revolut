@@ -5,4 +5,10 @@ $(document).ready(function(){
   $("i.fa-times").click( function(){
     $(".hamburger-menu").removeClass("active");
   });
+  $('.parent-dropdown').mouseenter(function() {
+    $(this).children('.dropdown').toggle();
+  });
+  $('.parent-dropdown').mouseleave(function() {
+    $(this).children('.dropdown').toggle();
+  });
 });
