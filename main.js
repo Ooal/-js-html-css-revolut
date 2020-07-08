@@ -12,7 +12,7 @@ $(document).ready(function(){
     $(this).children('.dropdown').toggle();
   });
   $('.parent-dropdown-xs').click(function() {
-    $(this).children('.dropdown').toggle();
+    $(this).children('.dropdown').toggle(300);
   });
 
 });
